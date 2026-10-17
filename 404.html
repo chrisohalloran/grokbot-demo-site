@@ -1,0 +1,44 @@
+<!-- Generated from web/ by npm run build. Edit web/index.html, not this file. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leva AI — The AI supply chain for building material suppliers</title>
+    <meta
+      name="description"
+      content="Leva AI is the AI supply chain for building material suppliers. Takeoffs from full plan sets, starting with rebar, then lumber, roofing and windows, plus rebar scheduling and supplier payments at 0.3%."
+    />
+    <meta name="theme-color" content="#efeae1" />
+    <link rel="icon" href="/grokbot-demo-site/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://chrisohalloran.github.io/grokbot-demo-site/" />
+    <meta property="og:title" content="Leva AI — The AI supply chain for building material suppliers" />
+    <meta
+      property="og:description"
+      content="Takeoffs from full plan sets, starting with rebar. Scheduling and supplier payments at 0.3%. No subscription."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chrisohalloran.github.io/grokbot-demo-site/" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('leva-theme');
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var root = document.documentElement;
+          if (dark) root.classList.add('dark');
+          root.style.colorScheme = dark ? 'dark' : 'light';
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', dark ? '#12110f' : '#efeae1');
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/grokbot-demo-site/assets/index-CcgpzAhO.js"></script>
+    <link rel="stylesheet" crossorigin href="/grokbot-demo-site/assets/index-TDuuSrbl.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This Leva AI demo needs JavaScript for the model, the takeoff and the calculator.</noscript>
+  </body>
+</html>
