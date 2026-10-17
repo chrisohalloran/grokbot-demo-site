@@ -175,7 +175,7 @@ export function Layout() {
         <div className="wrap footer-grid">
           <div>
             <Logo />
-            <p className="quiet">The AI supply chain for building material suppliers. This is a demo. Example sheet, example rates, no customer claims.</p>
+            <p className="quiet">AI-native takeoff for building material suppliers. This demo uses example sheets, example rates and a fictional supplier. No customer claims.</p>
           </div>
           <nav aria-label="Footer">
             <NavLink to="/product">Product</NavLink>

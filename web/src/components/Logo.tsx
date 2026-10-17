@@ -4,12 +4,11 @@ export function Logo({ onClick }: { onClick?: () => void }) {
   return (
     <Link to="/" className="logo" onClick={onClick}>
       <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M5 26V7h3.4v15.4H26V26H5Z" fill="currentColor" />
-        <path d="M14 7h11.2v3.2H17.4V17" stroke="var(--copper)" strokeWidth="2.2" fill="none" />
+        <rect x="7" y="5" width="18" height="22" rx="2" fill="none" stroke="currentColor" strokeWidth="1.7" />
+        <path d="M11 13h10M11 17h10M11 21h6" stroke="currentColor" strokeWidth="1.5" />
       </svg>
       <span className="logo-word">Leva</span>
       <span className="logo-ai">AI</span>
-      <span className="sr">home</span>
     </Link>
   );
 }

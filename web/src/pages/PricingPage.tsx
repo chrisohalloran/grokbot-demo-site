@@ -9,52 +9,29 @@ export default function PricingPage() {
   return (
     <main id="main" tabIndex={-1}>
       <section className="section">
-        <div className="wrap" style={{ display: 'grid', gap: '1rem' }}>
+        <div className="wrap narrow">
           <p className="kicker">Pricing</p>
-          <h1 className="display" style={{ fontSize: 'clamp(2.8rem, 6vw, 5.4rem)' }}>
-            Per takeoff. <em>0.3%</em> when you collect.
-          </h1>
-          <p className="lede">
-            No subscription and no seat fee. A takeoff is billed when it runs. Payments collected through Leva are 0.3% of the amount.
-          </p>
+          <h1 className="display">Pay when a takeoff runs.</h1>
+          <p className="lede">No subscription. Nothing charged in a month you don’t use it. Payments a supplier collects through Leva are 0.3% of the amount.</p>
+        </div>
+        <div className="wrap">
+          <ul className="facts">
+            <li><strong>Per takeoff</strong><span>The price is for a set that was read. The dollar amount in the calculator is an example you can edit.</span></li>
+            <li><strong>Idle is free</strong><span>No seats to park. No plan ticking over on a quiet week.</span></li>
+            <li><strong>0.3% on collection</strong><span>Only when money moves through the platform. The takeoff fee is separate.</span></li>
+          </ul>
         </div>
       </section>
-      <section className="section rule">
+      <section className="section rule" id="calculator">
         <div className="wrap">
-          <div className="rate-grid">
-            <article className="card">
-              <p className="kicker">Takeoff</p>
-              <strong>When it runs</strong>
-              <p>One charge for a plan set. Not a month of access. The calculator uses an <span className="mark">example</span> price you can change.</p>
-            </article>
-            <article className="card">
-              <p className="kicker">Payments</p>
-              <strong>0.3%</strong>
-              <p>Charged on money collected through Leva. An example $10,000 collection costs $30.</p>
-            </article>
-            <article className="card">
-              <p className="kicker">Monthly</p>
-              <strong>$0</strong>
-              <p>Nothing to keep open, and nothing to cancel.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section className="section rule">
-        <div className="wrap">
-          <header className="section-head">
-            <p className="kicker">Calculator</p>
-            <h2 className="display-2">Try the example arithmetic.</h2>
-            <p className="lede">
-              Move the inputs. The result is an illustration, not a forecast and not a quote. If the numbers stop looking favourable, the total says so.
-            </p>
-          </header>
+          <h2 className="display-2">Example arithmetic.</h2>
+          <p className="lede">Change the inputs. The result is the arithmetic of those examples, not a promise about a yard’s books.</p>
           <SavingsCalculator />
         </div>
       </section>
-      <section className="section rule">
-        <div className="wrap" style={{ display: 'grid', gap: '1.2rem' }}>
-          <h2 className="display-2">Questions worth answering plainly.</h2>
+      <section className="section">
+        <div className="wrap narrow">
+          <h2 className="display-2">Plain answers.</h2>
           <div className="faq">
             {FAQS.map((item) => (
               <details key={item.q}>
@@ -63,9 +40,7 @@ export default function PricingPage() {
               </details>
             ))}
           </div>
-          <p>
-            <Link to="/#takeoff">Run the example takeoff</Link>
-          </p>
+          <p className="quiet">The worked example on the home page uses example rates as well. <Link to="/#takeoff">Run that set</Link>.</p>
         </div>
       </section>
     </main>
